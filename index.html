@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LeetCode Inventory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    background-color: #242323;
+    
+}
+.container {
+    
+    width: fit-content;
+    margin: auto;
+    height: fit-content;
+    background-color: #101010;
+    padding: 20px;
+    align-self: center;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container .image{
+    justify-content: center;
+}
+input,
+textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0 10px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: p0x;
+}
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    opacity: 0.8;
+}
+.output {
+    /* background-color: white; */
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid red; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* .output div {
+    margin: 5px 0;
+} */
+
+</style>
+</head>
+<body>
+<div class="container">
+    <form id="signup">
+        <div class = "image">
+            <img src = "Leetcode_mage-removebg-preview.png">
+        </div>
+        <div>
+            <input type="text" name="user" placeholder="Problem Name" required>
+        </div>
+        <div>
+            <input type="text" name="category" placeholder="Category" required>
+        </div>
+        <div>
+            <input type="url" name="proburl" id="proburl" placeholder="Link of Leetcode Problem" pattern="https://.*" size="30" required />
+        </div>
+        <div>
+            <input type="url" name="ytlink" id="ytlink" placeholder="Link of YouTube Solution" pattern="https://.*" size="30" required />
+        </div>
+        
+        <div>
+            <textarea name="message" placeholder="Solution Approach" required></textarea> </div>
+        <div>
+            <input type="submit" value="Send">
+        </div>
+    </form>
+    <div class="output">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+        <div class="loader">
+            <ul>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+                <li><div></div></li>
+            </ul>
+            <h4>Sending...</h4>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
